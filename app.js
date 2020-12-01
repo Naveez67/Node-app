@@ -40,7 +40,7 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
-mongoose
+/*mongoose
   .connect("mongodb://localhost/productscrud", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -51,6 +51,6 @@ mongoose
   .catch((err) => {
     console.log("Error Connecting");
     console.log(err);
-  });
+  });*/
 
 module.exports = app;
